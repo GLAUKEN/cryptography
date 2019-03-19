@@ -26,7 +26,7 @@ def encrypt(key, message):
 
 # Why is AES-ECB-128 considered insecure ?
 
-# This is mainly because blocks containing the same data will be encrypt in the same
+# This is mainly because blocks containing the same data will be encrypted in the same
 # So this is easy to "guess" data containing in some blocks
 
 # How many attempts (in worst case) in order to brute force the key ?
@@ -52,10 +52,12 @@ def decrypt_oracle(message, decrypt):
 
 # decrypt_oracle(message, b'')
 
-# What does the IND-CPA definition say ? Is AES used in this mode IND-CPA ?
+# What does the IND-CPA definition say ?
 
 # It says that a cryptosystem is considered secure in terms of indistinguishability if given a ciphertext randomly chosen from a 2 elements message space
 # no adversary can determine the real message with a probability much better than 1/2
+
+# Is AES used in this mode IND-CPA ?
 
 # No because since blocks containing the same data have the same encryption. It is possible to determine or at least to guess a part of the message
 
