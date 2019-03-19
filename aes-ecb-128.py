@@ -26,7 +26,7 @@ def encrypt(key, message):
 
 # Why is AES-ECB-128 considered insecure ?
 
-# This is mainly because blocks containing the same data will be encrypted in the same
+# This is mainly because blocks containing the same data will be encrypted in the same way
 # So this is easy to "guess" data containing in some blocks
 
 # How many attempts (in worst case) in order to brute force the key ?
