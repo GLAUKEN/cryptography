@@ -95,12 +95,9 @@ ciphertexts = [
 ]
 
 def main():
-    messages_keys = []
-    for ciphertext in ciphertexts:
-        messages_keys.append(crack_ciphertext(ciphertext))
-    print(messages_keys[0])
+    return [crack_ciphertext(ciphertext) for ciphertext in ciphertexts]    
 
-main()
+print(main())
 
 # What would I do if the key was 5 bytes ?
 
